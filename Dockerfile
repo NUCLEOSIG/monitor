@@ -11,7 +11,7 @@ RUN apt-get update && apt-get install -y tzdata && rm -rf /var/lib/apt/lists/* \
 COPY . .
 
 # Exponer el puerto de Flask
-EXPOSE 5000
+EXPOSE 8002
 
 # El comando se define en docker-compose, pero dejamos uno por defecto
 CMD ["python", "app.py"]
